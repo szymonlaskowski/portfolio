@@ -67,7 +67,15 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${bodoniModa.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <script
+          defer
+          src="https://umami.szymonlaskowski.pl/script.js"
+          data-website-id="07b51f4e-e8b4-44ba-b74d-462e0c8b1f72"
+          data-domains="www.szymonlaskowski.pl"
+        />
+      </body>
     </html>
   );
 }
