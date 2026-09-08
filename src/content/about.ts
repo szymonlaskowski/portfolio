@@ -32,7 +32,7 @@ export const about: AboutDesk = {
       y: 0.72,
       title: "Business card",
       detail:
-        "szymonlaskowski.pl · Szymon Laskowski · szymlas61@gmail.com",
+        "szymonlaskowski.pl · Szymon Laskowski · szymon@szymonlaskowski.pl",
     },
   ],
   links: [
@@ -41,6 +41,6 @@ export const about: AboutDesk = {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/szymon-laskowski-5b866920a/",
     },
-    { label: "Email", href: "mailto:szymlas61@gmail.com" },
+    { label: "Email", href: "mailto:szymon@szymonlaskowski.pl" },
   ],
 };
