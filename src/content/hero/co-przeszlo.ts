@@ -3,34 +3,34 @@ import type { HeroProject } from "../types";
 const coprzeszlo: HeroProject = {
   id: "coprzeszlo",
   name: "Co Przeszło",
-  tagline: "Polish legislation, in plain language.",
-  year: "APR 2025",
-  role: "Design · Engineering",
+  tagline: "Polskie prawo w prostym języku.",
+  year: "KWI 2025",
+  role: "Projekt · Kod",
   wall: {
     src: "/img/co-przeszlo.png",
-    alt: "Co Przeszło, Polish legal acts platform",
+    alt: "Co Przeszło, platforma z polskimi aktami prawnymi",
     objectPosition: "50% 0%",
   },
   accent: "#7a2b24",
   monitor: { kind: "image", src: "/img/co-przeszlo.png" },
   summary:
-    "AI-assisted reader for Polish legal acts. Transforms dense statutes into understandable briefings, tracks parliamentary voting, and surfaces the politics behind the text.",
+    "Czytnik polskich aktów prawnych wspierany przez AI. Zamienia gęste ustawy w zrozumiałe streszczenia, śledzi głosowania w Sejmie i pokazuje politykę stojącą za tekstem.",
   tech: ["Next.js", "TypeScript", "Python", "Prisma", "Anthropic API"],
   link: { label: "coprzeszlo.pl", href: "https://coprzeszlo.pl/" },
   hotspots: [
     {
       x: 0.22,
       y: 0.42,
-      title: "AI briefing",
+      title: "Streszczenie AI",
       detail:
-        "A Python pipeline pulls each act, splits it with LangChain and summarizes it through the Anthropic API in Polish legal language.",
+        "Pipeline w Pythonie pobiera każdy akt, dzieli go przez LangChain i streszcza przez Anthropic API w języku polskiego prawa.",
     },
     {
       x: 0.72,
       y: 0.68,
-      title: "Voting data",
+      title: "Dane z głosowań",
       detail:
-        "Live parliamentary vote records stitched in so you can see who voted how.",
+        "Wpięte na żywo wyniki głosowań sejmowych, więc widać, kto jak głosował.",
     },
   ],
 };

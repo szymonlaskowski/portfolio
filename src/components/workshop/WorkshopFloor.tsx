@@ -137,7 +137,7 @@ export default function WorkshopFloor() {
             href="mailto:szymon@szymonlaskowski.pl"
             className="font-mono tracking-brutal text-[10px] uppercase text-bone/40 hover:text-bone/70 transition-colors"
           >
-            Contact
+            Kontakt
           </a>
         </header>
         <main className="flex flex-col">
@@ -180,19 +180,19 @@ export default function WorkshopFloor() {
               onClick={() => jumpTo("coprzeszlo")}
               className="uppercase text-bone/40 hover:text-bone transition-colors cursor-pointer"
             >
-              Work
+              Projekty
             </button>
             <button
               onClick={() => jumpTo("desk")}
               className="uppercase text-bone/40 hover:text-bone transition-colors cursor-pointer"
             >
-              About
+              O mnie
             </button>
             <a
               href="mailto:szymon@szymonlaskowski.pl"
               className="btn btn-ghost !py-1.5 !px-3.5 !text-[10px] tracking-brutal uppercase font-mono"
             >
-              Contact
+              Kontakt
             </a>
           </nav>
         </div>

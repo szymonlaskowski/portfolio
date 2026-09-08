@@ -5,7 +5,7 @@ const clocky: Experiment = {
   number: "02",
   name: "Clocky",
   summary:
-    "Desktop Pomodoro timer with an interactive 3D clock. Electron + Vue 3.",
+    "Desktopowy timer Pomodoro z interaktywnym zegarem 3D. Electron + Vue 3.",
   href: "https://github.com/SimonLaskowsky/clocky",
 };
 

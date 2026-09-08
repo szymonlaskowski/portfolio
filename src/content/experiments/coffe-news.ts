@@ -5,7 +5,7 @@ const coffeNews: Experiment = {
   number: "03",
   name: "Coffee News",
   summary:
-    "Python scraper + reader that surfaces the day's coffee-industry news in one feed.",
+    "Scraper w Pythonie i czytnik, który zbiera newsy z branży kawowej w jeden feed.",
   href: "https://github.com/SimonLaskowsky/coffe-news",
 };
 

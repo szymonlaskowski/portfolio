@@ -3,33 +3,33 @@ import type { HeroProject } from "../types";
 const ilezostanie: HeroProject = {
   id: "ilezostanie",
   name: "Ile Zostanie",
-  tagline: "What's actually left after taxes?",
-  year: "JAN 2026",
-  role: "Design · Engineering",
+  tagline: "Ile naprawdę zostaje po podatkach?",
+  year: "STY 2026",
+  role: "Projekt · Kod",
   wall: {
     src: "/img/ile-zostanie.png",
-    alt: "Ile Zostanie — Polish salary calculator",
+    alt: "Ile Zostanie, kalkulator wynagrodzeń",
     objectPosition: "50% 30%",
   },
   monitor: { kind: "image", src: "/img/ile-zostanie.png" },
   summary:
-    "A salary calculator for Polish employees and freelancers. Models every contract type and tax regime so your real take-home is never a mystery.",
+    "Kalkulator wynagrodzeń dla pracowników i freelancerów. Modeluje każdy rodzaj umowy i formę opodatkowania, więc kwota na rękę przestaje być zagadką.",
   tech: ["Next.js", "TypeScript", "Tailwind"],
   link: { label: "ilezostanie.com", href: "https://ilezostanie.com" },
   hotspots: [
     {
       x: 0.3,
       y: 0.55,
-      title: "Every contract modeled",
+      title: "Każda umowa policzona",
       detail:
-        "UoP, B2B, UoD, UZ — each with its own tax, ZUS, and health contribution logic.",
+        "UoP, B2B, UoD, UZ, każda z własną logiką podatku, ZUS i składki zdrowotnej.",
     },
     {
       x: 0.78,
       y: 0.4,
-      title: "Side-by-side compare",
+      title: "Porównanie obok siebie",
       detail:
-        "See the same gross under two contracts at once. Decisions made visible.",
+        "To samo brutto na dwóch umowach jednocześnie. Decyzja widoczna od razu.",
     },
   ],
 };

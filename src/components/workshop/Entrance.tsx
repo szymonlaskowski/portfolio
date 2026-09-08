@@ -33,7 +33,7 @@ export default function Entrance({ onJump }: Props) {
           </span>
           <span className="chip gap-1.5 !text-[10px]">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
-            Available for work
+            Otwarty na zlecenia
           </span>
         </div>
 
@@ -41,9 +41,9 @@ export default function Entrance({ onJump }: Props) {
           className="font-sans leading-[0.88] tracking-[-0.05em] text-bone"
           style={{ fontSize: "clamp(3rem, 6.5vw, 6.5rem)", fontWeight: 700 }}
         >
-          A studio
+          Szymon
           <br />
-          of one.
+          Laskowski.
         </h1>
 
         <div className="mt-6">
@@ -51,8 +51,7 @@ export default function Entrance({ onJump }: Props) {
         </div>
 
         <p className="mt-6 max-w-md text-[1.0625rem] text-bone/60 leading-relaxed">
-          Szymon Laskowski, building web experiences for people who care about
-          the details.
+          Kocham tworzyć.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-3">
@@ -63,7 +62,7 @@ export default function Entrance({ onJump }: Props) {
             onClick={() => onJump("coprzeszlo")}
             className="btn btn-ghost cursor-pointer"
           >
-            See the work
+            Zobacz projekty
             <span aria-hidden>→</span>
           </button>
         </div>
@@ -77,11 +76,11 @@ export default function Entrance({ onJump }: Props) {
       <div className="relative flex-1 flex flex-col justify-center px-10 md:px-12 md:pr-16 pb-24 pt-10 md:py-20">
         <div className="flex items-center gap-2.5 mb-4">
           <p className="font-mono text-[9px] uppercase tracking-brutal text-bone/30">
-            Selected work
+            Wybrane projekty
           </p>
           <span className="chip chip-own gap-1.5 !text-[10px] !py-0.5">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
-            Personal products
+            Własne produkty
           </span>
         </div>
 
@@ -130,10 +129,10 @@ export default function Entrance({ onJump }: Props) {
 
         <div className="flex items-center gap-2.5 mt-8 mb-1">
           <p className="font-mono text-[9px] uppercase tracking-brutal text-bone/25">
-            Archive
+            Archiwum
           </p>
           <span className="chip chip-client !text-[10px] !py-0.5">
-            For Software Things
+            Dla Software Things
           </span>
         </div>
         <ul>
@@ -164,7 +163,7 @@ export default function Entrance({ onJump }: Props) {
       <div className="absolute bottom-8 left-10 md:left-16 hidden md:flex items-center gap-3">
         <div className="w-px h-5 bg-bone/25" />
         <span className="font-mono text-[9px] uppercase tracking-brutal text-bone/35">
-          Scroll to explore
+          Przewiń, żeby zwiedzić
         </span>
       </div>
     </div>

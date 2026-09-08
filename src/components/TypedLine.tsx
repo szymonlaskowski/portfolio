@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const PHRASES = [
   "const available = true",
-  "// open to new work",
+  "// otwarty na nowe projekty",
   'import { craft } from "web"',
   "git push origin main",
   "npm run dev ✓",

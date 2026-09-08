@@ -22,7 +22,7 @@ export default function Desk() {
       {/* Copy */}
       <div className="max-w-lg">
         <p className="font-mono text-[10px] uppercase tracking-brutal text-bone/35 mb-6">
-          About
+          O mnie
         </p>
         <h2
           className="font-sans leading-[1] tracking-[-0.04em] text-bone"

@@ -10,15 +10,15 @@ export default function ArchiveWall() {
     >
       <div className="mb-9">
         <p className="font-mono text-[10px] uppercase tracking-brutal text-bone/35 mb-4">
-          Archive · client work
+          Archiwum · praca dla klientów
         </p>
         <h2
           className="font-sans leading-[1] tracking-[-0.04em] text-bone"
           style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)", fontWeight: 700 }}
         >
-          Commercial work,
+          Projekty komercyjne,
           <br />
-          <span className="text-bone/35 font-normal">in service of a team.</span>
+          <span className="text-bone/35 font-normal">zrobione w zespole.</span>
         </h2>
       </div>
 
@@ -44,7 +44,7 @@ export default function ArchiveWall() {
 
             <div className="flex flex-col gap-2.5 p-5">
               <span className="chip chip-client w-fit !text-[10px]">
-                For {item.at}
+                Dla {item.at}
               </span>
               <div className="flex items-start justify-between gap-3">
                 <h3 className="font-sans text-[0.95rem] font-semibold tracking-tight text-bone">

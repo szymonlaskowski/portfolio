@@ -30,7 +30,7 @@ export default function FloorHud({
             <button
               key={s.id}
               onClick={() => onJump(s.id)}
-              aria-label={`Go to ${s.label}`}
+              aria-label={`Przejdź do: ${s.label}`}
               aria-current={isActive ? "true" : undefined}
               className={`relative rounded-full px-3 py-1.5 font-mono text-[9px] uppercase tracking-brutal transition-colors ${
                 isActive

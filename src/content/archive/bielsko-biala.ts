@@ -5,7 +5,7 @@ const bielskoBiala: ArchiveItem = {
   name: "Bielsko-Biała",
   at: "Software Things",
   summary:
-    "Official municipal portal. A comprehensive city site serving residents and visitors.",
+    "Oficjalny portal miejski. Rozbudowany serwis dla mieszkańców i odwiedzających.",
   tech: ["Drupal"],
   thumbnail: "/img/bielsko-biala.png",
   href: "https://bielsko-biala.pl/",

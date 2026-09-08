@@ -8,7 +8,7 @@ export default function LocalTime() {
   useEffect(() => {
     const update = () => {
       setTime(
-        new Intl.DateTimeFormat("en-GB", {
+        new Intl.DateTimeFormat("pl-PL", {
           timeZone: "Europe/Warsaw",
           hour: "2-digit",
           minute: "2-digit",

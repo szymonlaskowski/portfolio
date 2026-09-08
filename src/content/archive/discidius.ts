@@ -5,7 +5,7 @@ const discidius: ArchiveItem = {
   name: "Discidius",
   at: "Software Things",
   summary:
-    "Telecommunication analytics platform. Data viz for network performance monitoring.",
+    "Platforma analityczna dla telekomunikacji. Wizualizacja danych do monitoringu wydajności sieci.",
   tech: ["Next.js"],
   thumbnail: "/img/discidius.png",
   href: "https://discidius.com/",

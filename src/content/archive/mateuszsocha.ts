@@ -5,7 +5,7 @@ const mateuszSocha: ArchiveItem = {
   name: "Mateusz Socha",
   at: "Software Things",
   summary:
-    "Official site for a Polish stand-up comedian. Ticket sales, video archive, newsletter — editorial brutalist aesthetic.",
+    "Oficjalna strona komika stand-upowego. Sprzedaż biletów, archiwum wideo, newsletter, w redakcyjnej brutalistycznej estetyce.",
   tech: ["WordPress"],
   thumbnail: "/img/mateuszsocha.png",
   href: "https://mateuszsocha.com/",

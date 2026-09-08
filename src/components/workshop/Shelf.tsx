@@ -10,15 +10,15 @@ export default function Shelf() {
     >
       <div className="mb-9">
         <p className="font-mono text-[10px] uppercase tracking-brutal text-bone/35 mb-4">
-          Experiments
+          Eksperymenty
         </p>
         <h2
           className="font-sans leading-[1] tracking-[-0.04em] text-bone"
           style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)", fontWeight: 700 }}
         >
-          Things I built
+          Rzeczy zbudowane
           <br />
-          <span className="text-bone/35 font-normal">to think with.</span>
+          <span className="text-bone/35 font-normal">z czystej ciekawości.</span>
         </h2>
       </div>
 

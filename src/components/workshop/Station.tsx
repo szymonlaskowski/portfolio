@@ -42,7 +42,7 @@ export default function Station({ project, number, total }: Props) {
             <div className="flex flex-wrap items-center gap-2.5 mb-5">
               <span className="chip chip-own gap-1.5 !text-[10px]">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
-                Personal product
+                Własny produkt
               </span>
               <span className="font-mono text-[9px] uppercase tracking-brutal text-bone/45">
                 {project.role}

@@ -2,11 +2,11 @@ import type { AboutDesk } from "./types";
 
 export const about: AboutDesk = {
   name: "Szymon Laskowski",
-  role: "Front-end engineer · Studio of one",
+  role: "Front-end engineer · Studio jednej osoby",
   body: [
-    "I build web experiences that treat the page as a space, not a document. Editorial type, considered motion, restraint where it counts.",
-    "Primarily React, Next.js, TypeScript, GSAP. Comfortable with Vue, Node, and design in Figma when the project calls for it.",
-    "Based in Poland. Currently open to new work.",
+    "Buduję strony, które traktują ekran jak przestrzeń, a nie dokument. Redakcyjna typografia, przemyślany ruch, umiar tam, gdzie się liczy.",
+    "Głównie React, Next.js, TypeScript i GSAP. Swobodnie czuję się też w Vue, Node i projektowaniu w Figmie, gdy projekt tego wymaga.",
+    "Mieszkam w Polsce. Aktualnie otwarty na nowe zlecenia.",
   ],
   photo: "/img/photo.jpg",
   items: [
@@ -14,23 +14,23 @@ export const about: AboutDesk = {
       id: "notebook",
       x: 0.22,
       y: 0.4,
-      title: "Field notes",
+      title: "Notatnik",
       detail:
-        "Kept since 2019. Half sketches, half post-mortems. Everything I ship passes through here first.",
+        "Prowadzony od 2019. W połowie szkice, w połowie wnioski po projektach. Wszystko, co wypuszczam, najpierw przechodzi tędy.",
     },
     {
       id: "coffee",
       x: 0.65,
       y: 0.55,
-      title: "Mid-morning ritual",
+      title: "Przedpołudniowy rytuał",
       detail:
-        "Good work happens between the second and third cup. Before that, meetings. After that, shipping.",
+        "Dobra robota dzieje się między drugą a trzecią kawą. Przed nią spotkania, po niej wdrożenia.",
     },
     {
       id: "card",
       x: 0.42,
       y: 0.72,
-      title: "Business card",
+      title: "Wizytówka",
       detail:
         "szymonlaskowski.pl · Szymon Laskowski · szymon@szymonlaskowski.pl",
     },
@@ -41,6 +41,6 @@ export const about: AboutDesk = {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/szymon-laskowski-5b866920a/",
     },
-    { label: "Email", href: "mailto:szymon@szymonlaskowski.pl" },
+    { label: "E-mail", href: "mailto:szymon@szymonlaskowski.pl" },
   ],
 };

@@ -1,9 +1,11 @@
 "use client";
 
+const MAIL_SUBJECT = "Porozmawiajmy o projekcie";
+const MAIL_BODY = "Cześć Szymon,\n\nChciałbym porozmawiać o projekcie.\n\n";
 const MAILTO =
   "mailto:szymon@szymonlaskowski.pl" +
-  "?subject=Let%27s%20work%20together" +
-  "&body=Hi%20Szymon%2C%0A%0AI%27d%20like%20to%20talk%20about%20a%20project.%0A%0A";
+  `?subject=${encodeURIComponent(MAIL_SUBJECT)}` +
+  `&body=${encodeURIComponent(MAIL_BODY)}`;
 
 export default function Exit() {
   return (
@@ -13,19 +15,19 @@ export default function Exit() {
     >
       <div>
         <p className="font-mono text-[10px] uppercase tracking-brutal text-bone/35 mb-8">
-          Contact
+          Kontakt
         </p>
         <h2
           className="font-sans leading-[1] tracking-[-0.04em] text-bone"
           style={{ fontSize: "clamp(2.5rem, 6vw, 5.5rem)", fontWeight: 700 }}
         >
-          Have something
+          Masz coś,
           <br />
-          <span className="text-bone/35 font-normal">worth making?</span>
+          <span className="text-bone/35 font-normal">co warto zrobić?</span>
         </h2>
         <p className="mt-6 max-w-sm text-[0.95rem] text-bone/45 leading-relaxed">
-          I take on a handful of projects a year. If yours needs weight, shadow,
-          and restraint — let&apos;s talk.
+          Biorę kilka projektów rocznie. Jeśli Twój potrzebuje charakteru,
+          głębi i umiaru, porozmawiajmy.
         </p>
 
         {/* Prepared email card */}
@@ -35,20 +37,20 @@ export default function Exit() {
         >
           <div className="flex items-center justify-between">
             <span className="font-mono text-[9px] uppercase tracking-brutal text-bone/35 group-hover:text-bone/60 transition-colors">
-              To: szymon@szymonlaskowski.pl
+              Do: szymon@szymonlaskowski.pl
             </span>
             <span className="font-mono text-[9px] text-bone/25 group-hover:text-bone/50 transition-colors">
               ↗
             </span>
           </div>
           <div className="font-mono text-[9px] uppercase tracking-brutal text-bone/25">
-            Subject: Let&apos;s work together
+            Temat: {MAIL_SUBJECT}
           </div>
           <div className="border-t border-bone/8 pt-3 text-[0.82rem] text-bone/35 leading-relaxed group-hover:text-bone/50 transition-colors">
-            Hi Szymon, I&apos;d like to talk about a project...
+            Cześć Szymon, chciałbym porozmawiać o projekcie...
           </div>
           <div className="mt-1 font-mono text-[9px] uppercase tracking-brutal text-bone/22 group-hover:text-bone/45 transition-colors">
-            Click to open in mail →
+            Kliknij, żeby otworzyć w poczcie →
           </div>
         </a>
 

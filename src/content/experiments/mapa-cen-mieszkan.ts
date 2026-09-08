@@ -5,7 +5,7 @@ const mapaCenMieszkan: Experiment = {
   number: "03",
   name: "Mapa Cen Mieszkań",
   summary:
-    "Interactive heatmap of Polish apartment prices, aggregated from listings. MapLibre GL + Next.js.",
+    "Interaktywna mapa cieplna cen mieszkań w Polsce, zagregowana z ogłoszeń. MapLibre GL + Next.js.",
   href: "https://mapa-cen-mieszkan.vercel.app",
 };
 

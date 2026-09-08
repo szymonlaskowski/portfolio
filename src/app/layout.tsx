@@ -22,35 +22,37 @@ const bodoniModa = Bodoni_Moda({
 export const metadata: Metadata = {
   metadataBase: new URL("https://szymonlaskowski.pl"),
   title: {
-    default: "szymonlaskowski.pl — Szymon Laskowski",
+    default: "Szymon Laskowski",
     template: "%s · szymonlaskowski.pl",
   },
   description:
-    "Studio by Szymon Laskowski. Editorial web, quiet detail. Walk the floor.",
+    "Studio Szymona Laskowskiego. Strony i aplikacje webowe z redakcyjnym charakterem i dbałością o szczegół.",
   openGraph: {
-    title: "szymonlaskowski.pl — Szymon Laskowski",
+    title: "Szymon Laskowski · szymonlaskowski.pl",
     description:
-      "Studio by Szymon Laskowski. Editorial web, quiet detail. Walk the floor.",
+      "Studio Szymona Laskowskiego. Strony i aplikacje webowe z redakcyjnym charakterem i dbałością o szczegół.",
     url: "https://szymonlaskowski.pl",
     siteName: "szymonlaskowski.pl",
-    locale: "en_US",
+    locale: "pl_PL",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "szymonlaskowski.pl — Szymon Laskowski",
+    title: "Szymon Laskowski · szymonlaskowski.pl",
     description:
-      "Editorial web, quiet detail. A studio of one, run by Szymon Laskowski.",
+      "Strony i aplikacje webowe z redakcyjnym charakterem. Studio jednej osoby, prowadzone przez Szymona Laskowskiego.",
   },
   keywords: [
     "Szymon Laskowski",
     "Simon Laskowski",
     "szymonlaskowski.pl",
     "front-end developer",
-    "web design Poland",
-    "Next.js developer",
-    "editorial web",
-    "brutalist web design",
+    "programista front-end",
+    "projektowanie stron internetowych",
+    "aplikacje webowe",
+    "Next.js",
+    "React",
+    "Katowice",
   ],
   authors: [{ name: "Szymon Laskowski" }],
   creator: "Szymon Laskowski",
@@ -64,7 +66,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="pl"
       className={`${geistSans.variable} ${geistMono.variable} ${bodoniModa.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
