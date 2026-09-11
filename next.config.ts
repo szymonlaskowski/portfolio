@@ -11,6 +11,10 @@ import type { NextConfig } from "next";
    is nothing to inject through. */
 const umamiOrigin = "https://umami.szymonlaskowski.pl";
 
+const konsolaLeadGen = "https://leadgen-web-u7f37a-ef810e-57-128-254-163.sslip.io";
+const podgladMakiety = "/podglad/m/:token";
+const wszystkoPozaPodgladem = "/((?!podglad/).*)";
+
 const csp = [
   "default-src 'self'",
   `script-src 'self' 'unsafe-inline' ${umamiOrigin}`,
@@ -45,8 +49,11 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  async rewrites() {
+    return [{ source: podgladMakiety, destination: `${konsolaLeadGen}/m/:token` }];
+  },
   async headers() {
-    return [{ source: "/:path*", headers: securityHeaders }];
+    return [{ source: wszystkoPozaPodgladem, headers: securityHeaders }];
   },
 };
 
