@@ -162,12 +162,9 @@ const css = `
       letter-spacing: -.05em;
     }
 
-    .work p {
-      font-size: 14px;
-    }
-
     .work p:first-of-type {
       margin-top: auto;
+      font-size: 14px;
     }
 
     .about {
