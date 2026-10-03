@@ -1,14 +1,10 @@
-import type { ArchiveItem } from "../types";
+import type { Work } from "../types";
 
-const discidius: ArchiveItem = {
-  id: "discidius",
+const discidius: Work = {
   name: "Discidius",
-  at: "Software Things",
-  summary:
-    "Platforma analityczna dla telekomunikacji. Wizualizacja danych do monitoringu wydajności sieci.",
-  tech: ["Next.js"],
-  thumbnail: "/img/discidius.png",
-  href: "https://discidius.com/",
+  summary: "Dashboardy do monitoringu sieci.",
+  stack: ["Next.js"],
+  url: "https://discidius.com/",
 };
 
 export default discidius;

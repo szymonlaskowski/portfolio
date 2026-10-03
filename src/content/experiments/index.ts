@@ -1,9 +1,6 @@
-import clocky from "./clocky";
-import coffeNews from "./coffe-news";
+import justTodo from "./justtodo";
+import jdgCalculator from "./jdg-calculator";
+import teammateBot from "./teammate-bot";
+import otomotoNotifier from "./otomoto-notifier";
 
-// Side projects on the shelf. The `number` field on each item controls
-// its displayed counter — keep them sequential when you reorder.
-export const experiments = [
-  clocky,
-  coffeNews,
-];
+export const experiments = [justTodo, jdgCalculator, teammateBot, otomotoNotifier];

@@ -1,14 +1,10 @@
-import type { ArchiveItem } from "../types";
+import type { Work } from "../types";
 
-const bielskoBiala: ArchiveItem = {
-  id: "bielsko-biala",
+const bielskoBiala: Work = {
   name: "Bielsko-Biała",
-  at: "Software Things",
-  summary:
-    "Oficjalny portal miejski. Rozbudowany serwis dla mieszkańców i odwiedzających.",
-  tech: ["Drupal"],
-  thumbnail: "/img/bielsko-biala.png",
-  href: "https://bielsko-biala.pl/",
+  summary: "Portal miasta.",
+  stack: ["Drupal"],
+  url: "https://bielsko-biala.pl/",
 };
 
 export default bielskoBiala;

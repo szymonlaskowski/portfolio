@@ -1,14 +1,10 @@
-import type { ArchiveItem } from "../types";
+import type { Work } from "../types";
 
-const mateuszSocha: ArchiveItem = {
-  id: "mateuszsocha",
+const mateuszSocha: Work = {
   name: "Mateusz Socha",
-  at: "Software Things",
-  summary:
-    "Oficjalna strona komika stand-upowego. Sprzedaż biletów, archiwum wideo, newsletter, w redakcyjnej brutalistycznej estetyce.",
-  tech: ["WordPress"],
-  thumbnail: "/img/mateuszsocha.png",
-  href: "https://mateuszsocha.com/",
+  summary: "Strona komika. Bilety i nagrania.",
+  stack: ["WordPress"],
+  url: "https://mateuszsocha.com/",
 };
 
 export default mateuszSocha;

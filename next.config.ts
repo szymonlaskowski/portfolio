@@ -1,14 +1,10 @@
 import type { NextConfig } from "next";
+import { styleHash } from "./src/document";
 
 /* The site is fully static: no API routes, no server actions, no middleware,
    no user input, no third-party embeds. The only outside origin is our own
    Umami instance (script + beacon), so the policy can be closed down to
-   almost nothing.
-
-   'unsafe-inline' stays on script-src/style-src because Next inlines its
-   bootstrap script and Tailwind injects a style tag, and a nonce needs a
-   request-time server this site does not have. With no input surface there
-   is nothing to inject through. */
+   almost nothing. */
 const umamiOrigin = "https://umami.szymonlaskowski.pl";
 
 const konsolaLeadGen = "https://leadgen-web-u7f37a-ef810e-57-128-254-163.sslip.io";
@@ -17,10 +13,10 @@ const wszystkoPozaPodgladem = "/((?!podglad/).*)";
 
 const csp = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline' ${umamiOrigin}`,
-  "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data:",
-  "font-src 'self'",
+  `script-src 'self' ${umamiOrigin}`,
+  `style-src 'sha256-${styleHash}'`,
+  "img-src 'self'",
+  "font-src 'none'",
   `connect-src 'self' ${umamiOrigin}`,
   "form-action 'none'",
   "frame-src 'none'",
