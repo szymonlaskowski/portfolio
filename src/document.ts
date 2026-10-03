@@ -1,6 +1,6 @@
 import { execSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { about, archive, experiments, heroProjects } from "./content";
+import { aboutParagraphs, commercialWork, contactLinks, experiments, projects } from "./content";
 import type { Project, Work } from "./content";
 
 const lastCommitDate = execSync("git log -1 --format=%cs").toString().trim();
@@ -234,13 +234,13 @@ function renderDocumentWithHtmlSize(htmlKilobytes: string) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <base target="_blank">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <title>Szymon Laskowski</title>
   <meta name="description" content="Front-end engineer. Moje projekty mówią za mnie.">
   <meta property="og:title" content="Szymon Laskowski">
   <meta property="og:description" content="Front-end engineer. Moje projekty mówią za mnie.">
   <meta property="og:image" content="https://szymonlaskowski.pl/opengraph-image.png">
   <style>${css}</style>
-  <script defer src="/js/gsap.min.js"></script>
   <script defer src="/js/motion.js"></script>
   <script defer src="https://umami.szymonlaskowski.pl/script.js" data-website-id="07b51f4e-e8b4-44ba-b74d-462e0c8b1f72" data-domains="www.szymonlaskowski.pl"></script>
 </head>
@@ -259,12 +259,12 @@ function renderDocumentWithHtmlSize(htmlKilobytes: string) {
 <main class="grid">
 
   <section aria-label="Projekty">
-${heroProjects.map(projectCell).join("\n")}
+${projects.map(projectCell).join("\n")}
   </section>
 
   <section>
     <h2 class="label">Prace komercyjne</h2>
-${archive.map((work) => workCell(work, "span-4")).join("\n")}
+${commercialWork.map((work) => workCell(work, "span-4")).join("\n")}
   </section>
 
   <section>
@@ -274,13 +274,13 @@ ${experiments.map((work) => workCell(work, "span-6")).join("\n")}
 
   <section>
     <h2 class="label">O mnie</h2>
-${about.paragraphs.map((paragraph) => `    <p class="cell span-4 about">${paragraph}</p>`).join("\n")}
+${aboutParagraphs.map((paragraph) => `    <p class="cell span-4 about">${paragraph}</p>`).join("\n")}
   </section>
 
   <section>
     <h2 class="label">Kontakt</h2>
     <address>
-${about.contact.map((link) => `      <a class="cell span-4 contact" href="${link.href}">${link.label}</a>`).join("\n")}
+${contactLinks.map((link) => `      <a class="cell span-4 contact" href="${link.href}">${link.label}</a>`).join("\n")}
     </address>
   </section>
 
