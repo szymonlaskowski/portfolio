@@ -238,7 +238,6 @@ function renderDocumentWithHtmlSize(htmlKilobytes: string) {
   <meta property="og:description" content="Front-end engineer. Moje projekty mówią za mnie.">
   <meta property="og:image" content="https://szymonlaskowski.pl/opengraph-image.png">
   <style>${css}</style>
-  <script defer src="/js/motion.js"></script>
   <script defer src="https://umami.szymonlaskowski.pl/script.js" data-website-id="07b51f4e-e8b4-44ba-b74d-462e0c8b1f72" data-domains="www.szymonlaskowski.pl"></script>
 </head>
 <body>
